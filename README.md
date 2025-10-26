@@ -51,12 +51,4 @@ The system reads real-time temperature and humidity from the DHT11 sensor, proce
 
 ---
 
-## ThingSpeak Setup
 
-1. Create a free account on [ThingSpeak](https://thingspeak.com).  
-2. Create a new channel with:
-   - Field 1 → Humidity  
-   - Field 2 → Temperature  
-3. Copy the Write API Key and update it in the code:
-   ```c
-   static unsigned char command_ESP_7[64] = "GET /update?api_key=YOUR_API_KEY&field1=";
